@@ -21,7 +21,7 @@ help: _header
 
 _header:
 	@echo --------------------
-	@echo Docker en OpenNebula
+	@echo Webmin en OpenNebula
 	@echo --------------------
 
 build:

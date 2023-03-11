@@ -18,5 +18,5 @@
     # Actualizar el sistema
     - import_tasks: upgrade-tasks.yml
 
-    # Instalar Docker
-    - import_tasks: docker-tasks.yml
+    # Instalar Webmin
+    - import_tasks: webmin-tasks.yml

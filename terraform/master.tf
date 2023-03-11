@@ -12,7 +12,7 @@ resource "opennebula_virtual_machine" "master" {
 
   template_id = data.opennebula_template.template.id
 
-  name = "docker-opennebula"
+  name = "webmin-opennebula"
 
   cpu    = 1
   vcpu   = 4
