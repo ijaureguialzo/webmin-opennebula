@@ -1,6 +1,6 @@
-# docker-opennebula
+# webmin-opennebula
 
-Instalación de un servidor Docker en OpenNebula con Terraform y Ansible.
+Instalación de un servidor Webmin en OpenNebula con Terraform y Ansible.
 
 ## Prerrequisitos
 
@@ -44,10 +44,9 @@ Instalación de un servidor Docker en OpenNebula con Terraform y Ansible.
 
 6. Conectarse a la máquina virtual.
 
-    ```shell
-    make ssh
-    ```
+   https://ip:10000
 
 ## Referencias
 
-- [How to alias docker-compose to docker compose?](https://stackoverflow.com/questions/72099653/how-to-alias-docker-compose-to-docker-compose)
+- [Downloading and Installing](https://webmin.com/download/)
+- [How to Install Webmin with free Let's Encrypt SSL Certificate on Ubuntu 22.04](https://www.howtoforge.com/tutorial/ubuntu-webmin-installation/)
