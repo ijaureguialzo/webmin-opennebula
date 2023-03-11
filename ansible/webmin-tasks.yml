@@ -1,7 +1,10 @@
 - name: Añadir el repositorio oficial de Webmin
   shell: |
     curl -o setup-repos.sh https://raw.githubusercontent.com/webmin/webmin/master/setup-repos.sh
-    sh setup-repos.sh
+    sh setup-repos.sh <<EOF
+      y
+    EOF
+    rm -f setup-repos.sh
 
 - name: Instalar el paquete de Webmin
   ansible.builtin.apt:
