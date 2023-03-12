@@ -11,6 +11,7 @@ services:
     hostname: webmin-workspace
     environment:
       - TF_VAR_SSH_PUBLIC_KEY=${SSH_PUBLIC_KEY}
+      - WEBMIN_ROOT_PASSWORD=${WEBMIN_ROOT_PASSWORD}
     volumes:
       - ./terraform:/terraform
       - ./ansible:/ansible

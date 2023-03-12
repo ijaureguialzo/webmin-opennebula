@@ -3,3 +3,6 @@ ALPINE_VERSION=3.17
 
 # Clave pública del usuario para inyectar en las máquinas OpenNebula
 SSH_PUBLIC_KEY=
+
+# Contraseña del usuario root de webmin
+WEBMIN_ROOT_PASSWORD=12345Abcde

@@ -29,6 +29,7 @@ resource "opennebula_virtual_machine" "master" {
   nic {
     model      = "virtio"
     network_id = data.opennebula_virtual_network.network.id
+    ip         = "172.20.227.242"
   }
 
   disk {

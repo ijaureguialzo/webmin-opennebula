@@ -1,3 +1,6 @@
+- name: Configurar el fichero de hosts
+  shell: echo "172.20.227.241 ubuntu.ciber-egibide.eu" >> /etc/hosts
+
 - name: Configurar el mirror de Ubuntu a utilizar
   ansible.builtin.copy:
     src: /ansible/sources.list

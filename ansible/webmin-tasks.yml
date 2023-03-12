@@ -6,8 +6,32 @@
     EOF
     rm -f setup-repos.sh
 
-- name: Instalar el paquete de Webmin
-  ansible.builtin.apt:
-    name: webmin
+- name: Instalar los paquetes necesarios
+  apt:
+    name: "{{ packages }}"
     state: present
     update_cache: yes
+  vars:
+    packages:
+      - webmin
+      - nginx
+
+- name: Copiar el fichero nginx.conf
+  ansible.builtin.copy:
+    src: /ansible/nginx.conf
+    dest: /etc/nginx/sites-enabled/default
+
+- name: Reiniciar nginx
+  service:
+    name: nginx
+    daemon_reload: yes
+    state: restarted
+
+- name: Establecer la contrseña del usuario root
+  vars:
+    user: "root"
+    password: "{{ lookup('env', 'WEBMIN_ROOT_PASSWORD') }}"
+  ansible.builtin.user:
+    name: "{{ user }}"
+    state: present
+    password: "{{ password | password_hash('sha512') }}"

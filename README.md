@@ -50,3 +50,6 @@ Instalación de un servidor Webmin en OpenNebula con Terraform y Ansible.
 
 - [Downloading and Installing](https://webmin.com/download/)
 - [How to Install Webmin with free Let's Encrypt SSL Certificate on Ubuntu 22.04](https://www.howtoforge.com/tutorial/ubuntu-webmin-installation/)
+- [Configuring Nginx reverse proxy for webmin](https://stackoverflow.com/questions/22608942/configuring-nginx-reverse-proxy-for-webmin)
+- [2 Ways to change user password with Ansible](https://www.howtouselinux.com/post/change-user-password-with-ansible)
+- [How to pass password to Ansible from environment variable](https://medium.com/opsops/how-to-pass-password-to-ansible-from-environment-variable-bd5c566bc8a1)
